@@ -1,0 +1,30 @@
+<ion-view title="'Main'">
+  <ion-side-menus>
+    <!-- CENTER CONTENT -->
+    <ion-pane side-menu-content ng-controller="MainController">
+      <nav-view name="main"></nav-view>
+    </ion-pane>
+
+    <!-- LEFT MENU -->
+    <ion-side-menu side="left" ng-controller="MainController" class="darkblue-bg">
+      <div class="list">
+        <div class="item item-divider">
+          Menu
+        </div>
+        <a class="item" href="#" ng-click="toggleMenu()">
+          Item 1
+        </a>
+        <a class="item" href="#" ng-click="toggleMenu()">
+          Item 2
+        </a>
+        <a class="item" href="#" ng-click="toggleMenu()">
+          Item 3
+        </a>
+        <span class="item" ng-click="#" style="cursor:pointer">
+          Logout
+        </span>
+      </div>
+    </ion-side-menu>
+
+  </ion-side-menus>
+</ion-view>
